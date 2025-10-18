@@ -1,13 +1,12 @@
 import React from 'react';
 import RoutesApp from './routes';
-import PokemonCard from './components/PokemonCard';
+
 
 
 function App() {
   return (
     <div>
-      <h1>Primeira pagina</h1>
-      <PokemonCard/>
+      <h1>Meu portfólio</h1>
     </div>
   )
 }
