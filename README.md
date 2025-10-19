@@ -25,12 +25,12 @@ Para executar este projeto em sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL-DO-SEU-REPOSITORIO>
+    git clone https://github.com/luiz-divino/meu-portfolio-react
     ```
 
 2.  **Acesse a pasta do projeto:**
     ```bash
-    cd <NOME-DA-PASTA-DO-PROJETO>
+    cd aula-react
     ```
 
 3.  **Instale as dependências:**
@@ -55,4 +55,4 @@ A aplicação estará disponível em `http://localhost:3000`.
 
 ---
 
-Feito com ❤️ por **Luiz Divino**.
+ **Luiz Divino**.
