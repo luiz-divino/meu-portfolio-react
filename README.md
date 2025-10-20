@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Meu Portfólio com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi criado com o objetivo de aplicar e aprofundar meus conhecimentos em desenvolvimento front-end, utilizando tecnologias modernas como React.
 
-## Available Scripts
+Através deste projeto, pude não apenas demonstrar meus trabalhos, mas também praticar e aprender novas técnicas, como a estilização de componentes com `styled-components` e a criação de animações fluidas com `framer-motion`.
 
-In the project directory, you can run:
+## 🚀 Tecnologias Utilizadas
 
-### `npm start`
+- **React:** Biblioteca JavaScript para construir interfaces de usuário.
+- **Styled-Components:** Para estilização dos componentes, permitindo escrever CSS dentro do JavaScript.
+- **Framer Motion:** Uma biblioteca de animação para React que facilita a criação de animações complexas.
+- **React Router Dom:** Para gerenciar a navegação e as rotas da aplicação.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Aprendizados
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O desenvolvimento deste portfólio foi uma jornada de muito aprendizado. Os principais pontos que pude praticar e aprimorar foram:
 
-### `npm test`
+- **Componentização:** Aprimorei minha habilidade de criar componentes reutilizáveis e bem estruturados em React.
+- **CSS-in-JS com Styled-Components:** Ganhei experiência na criação de estilos dinâmicos e componentizados, o que me permitiu ter um controle maior sobre a aparência da aplicação.
+- **Animações com Framer Motion:** Aprendi a dar vida à interface do usuário com animações declarativas, melhorando a experiência de navegação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Como rodar o projeto localmente
 
-### `npm run build`
+Para executar este projeto em sua máquina, siga os passos abaixo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/luiz-divino/meu-portfolio-react
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd aula-react
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+    ou
+    ```bash
+    yarn install
+    ```
 
-### `npm run eject`
+4.  **Inicie a aplicação:**
+    ```bash
+    npm start
+    ```
+    ou
+    ```bash
+    yarn start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A aplicação estará disponível em `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ **Luiz Divino**.
