@@ -2,13 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { projectsData } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
+import Footer from '../components/Footer';
 
 const ProjectsContainer = styled.div`
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 2rem;
   }
 

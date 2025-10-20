@@ -1,46 +1,54 @@
 import React from "react";
 import styled from "styled-components";
 import ProfilePic from "../assets/img/logo.png";
+import Footer from "../components/Footer";
 
 const HomePageContainer = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 80vh;
-  padding: 0 1rem;
+  max-width: 100vw;
+  overflow: hidden;
 
   @media (min-width: 768px) {
-    padding: 0 2rem;
+    height: 80vh;
   }
 `;
 
 const ContentSection = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
   max-width: 1100px;
-  width: 100%;
+  height: auto;
+  width: 80vw;
 
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    text-align: left;
+    text-align: center;
+    gap: 4rem;
+    height: 65vh;
   }
 
 `;
 
 const TextContainer = styled.div`
-  flex: 1;
   order: 2;
+  border: 2px solid #01DF76;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: auto;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     order: 1;
+    text-align: justify;
 }
 
   h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    text-align: start;
 
     @media (min-width: 768px) {
       font-size: 3rem;
@@ -52,7 +60,6 @@ const TextContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 400;
     color: #888;
-    margin-bottom: 1.5rem;
 
   @media (min-width: 768px) {
       font-size: 1.5rem;
@@ -62,7 +69,7 @@ const TextContainer = styled.div`
 
   p {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.2;
 
     @media (min-width: 768px) {
       font-size: 1.1rem;
@@ -77,7 +84,7 @@ const LinksContainer = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   a {
@@ -108,14 +115,16 @@ const ImageContainer = styled.div`
 `;
 
 const ProfileImage = styled.img`
-  width: 250px;
-  height: 250px;
+  display: none;
+  width: 200px;
+  height: 200px;
   border-radius: 5%;
   object-fit: cover; 
 
   @media (min-width: 768px) {
-    width: 300px;
-    height: 300px;
+  display: inline-block;
+    width: 250px;
+    height: 250px;
   }
 `;
 
@@ -127,7 +136,7 @@ function HomePage() {
     <HomePageContainer>
       <ContentSection>
         <TextContainer>
-          <h1><span style={{ color: '#CCCCCC' }}>Olá</span>, eu sou Luiz Fernando</h1>
+          <h1>Olá, eu sou Luiz Fernando</h1>
           <h2>Desenvolvedor de software</h2>
           <p style={{ color: '#CCCCCC' }}>
             Estudante de Engenharia de Software no Ibmec-RJ, apaixonado por
@@ -144,7 +153,7 @@ function HomePage() {
           <ProfileImage src={ProfilePic} alt="Foto de Luiz Fernando" />
         </ImageContainer>
 
-
+        <Footer />
       </ContentSection>
     </HomePageContainer>
 

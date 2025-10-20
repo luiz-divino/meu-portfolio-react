@@ -2,11 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #333;
   color: #fff;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  width: 90%;
+  max-width: 1200px;
   text-align: center;
-  padding: 1.5rem 2rem;
-  margin-top: 2rem; // Empurra o rodapé para baixo
+
+  p {
+    margin: 0;
+    white-space: normal; /* evita quebra de linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* evita overflow extremo */
+  }
+
 `;
 
 function Footer() {
@@ -15,7 +26,8 @@ function Footer() {
 
   return (
     <FooterContainer>
-      <p>© {currentYear} Luiz Fernando. Todos os direitos reservados.</p>
+      <p>© {currentYear} Luiz Fernando.<br />
+        Todos os direitos reservados.</p>
     </FooterContainer>
   );
 }
