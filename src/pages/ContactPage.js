@@ -5,14 +5,18 @@ const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
   max-width: 800px;
   margin: 2rem auto;
 `;
 
 const PageTitle = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const InfoText = styled.p`

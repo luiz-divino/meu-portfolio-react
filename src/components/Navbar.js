@@ -1,7 +1,8 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logoImage from '../assets/img/logo.png'; 
+import logoImage from '../assets/img/logo.png';
 
 const StyledLink = styled(Link)`
   color: #01DF76;
@@ -17,12 +18,31 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+  span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 const NavContainer = styled.nav`
   background-color: #333;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 `;
 
 const NavLogo = styled(Link)` // O logo também é um link para a home
@@ -36,27 +56,52 @@ const NavLinks = styled.ul`
   display: flex;
   list-style-type: none;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    display: ${props => (props.isOpen ? 'flex' : 'none')};
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+
 `;
 
 function Navbar() {
-    return (
-       <NavContainer>
-        <NavLogo to="/">
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <NavContainer>
+      <NavLogo to="/">
         <img src={logoImage} alt="imagem da logo" style={{ height: '50px' }} />
-        </NavLogo>
-        <NavLinks>
-            <li>
-                <StyledLink to="/">Home</StyledLink>
-            </li>
-            <li>
-                <StyledLink to="/projetos">Projetos</StyledLink>
-            </li>
-            <li>
-                <StyledLink to="/contato">Contatos</StyledLink>
-            </li>
-        </NavLinks>
-       </NavContainer>
-    )
+      </NavLogo>
+
+    <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+
+
+
+
+      <NavLinks>
+        <li>
+          <StyledLink to="/" onClick={()=> setIsOpen(false)}>Home</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/projetos" onClick={()=> setIsOpen(false)}>Projetos</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/contato" onClick={()=> setIsOpen(false)}>Contatos</StyledLink>
+        </li>
+      </NavLinks>
+    </NavContainer>
+  )
 }
 
 export default Navbar;
